@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttershop</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>logo</h1>
+            <div class="nav-container">
+                <div class="gnb gnb1">
+                    <div class="search">
+                        <!-- <input type="text" id="search"> -->
+                        <a href="#">search</a>
+                    </div>
+                    <ul>
+                        <li><a href="#">로그인</a></li>
+                        <li><a href="#">회원가입</a></li>
+                        <li><a href="#">장바구니</a><span>0</span></li>
+                        <li><a href="#">마이페이지</a></li>
+                        <li><a href="#">고객센터</a></li>
+                    </ul> 
+                </div>
+                <div class="gnb gnb2">
+                    <ul>
+                        <li><a href="#">BEST</a><span>|</span></li>
+                        
+                        <li><a href="#">REVIEW</a><span>|</span></li>
+                        
+                        <li><a href="#">MAGAZINE</a><span>|</span></li>
+                        
+                        <li><a href="#">SALE</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">All</a></li>
+                    <li><a href="#">Stationery & Plush</a></li>
+                    <li><a href="#">Living</a></li>
+                    <li><a href="#">Bath</a></li>
+                    <li><a href="#">Party & Play</a></li>
+                    <li><a href="#">Beauty & Fitness</a></li>
+                    <li><a href="#">Food</a></li>
+                    <li><a href="#">Daily Needs</a></li>
+                </ul>
+            </div>
+        </header>
+        <hr>
+        <div class="section1">
+            <div class="swiper mySwiper1">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./images/banner1.jpg" alt="해피버터데이 여름 정기 클라이언스">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./images/banner2.jpg" alt="이달의 신상품_낮잠배게필통">
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#"><img src="./images/banner3.jpg" alt="이달의 인기상품_아이스넥밴드 선풍기"></a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#"><img src="./images/banner4.jpg" alt="이달의 신상품_포토카드인형,포토카드키링"></a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#"><img src="./images/banner5.jpg" alt="이달의 인기상품_미니 휴대용 선풍기"></a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#"><img src="./images/banner6.jpg" alt="시원한 여름 파자마 4종 출시"></a>
+                  </div>
+                  
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-scrollbar"></div>
+              </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper1", {
+          cssMode: true,
+          scrollbar: {
+            el: ".swiper-scrollbar",
+            hide: true,
+          },
+          navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+          mousewheel: true,
+          keyboard: true,
+        });
+      
+      </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+{
+  "name": "buttershop",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "\"html",
+    "css",
+    "js",
+    "fullpage\""
+  ],
+  "author": "\"hiheecho\"",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "date-fns": "^2.29.1",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  },
+  "repository": {
+    "type": "git",
+    "url": "(https://github.com/hiheecho/buttershop.git)"
+  },
+  "description": ""
+}
