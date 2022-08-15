@@ -58,11 +58,12 @@
         <div class="section1">
             <div class="swiper mySwiper1">
                 <div class="swiper-wrapper">
+                  
                   <div class="swiper-slide">
-                    <img src="./images/banner1.jpg" alt="해피버터데이 여름 정기 클라이언스">
+                    <a href="#"><img src="./images/banner1.jpg" alt="해피버터데이 여름 정기 클라이언스"></a>
                   </div>
                   <div class="swiper-slide">
-                    <img src="./images/banner2.jpg" alt="이달의 신상품_낮잠배게필통">
+                    <a href="#"><img src="./images/banner2.jpg" alt="이달의 신상품_낮잠배게필통"></a>
                   </div>
                   <div class="swiper-slide">
                     <a href="#"><img src="./images/banner3.jpg" alt="이달의 인기상품_아이스넥밴드 선풍기"></a>
@@ -80,26 +81,30 @@
                 </div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
-                <div class="swiper-scrollbar"></div>
+                <div class="swiper-pagination"></div>
               </div>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script>
-        var swiper = new Swiper(".mySwiper1", {
-          cssMode: true,
-          scrollbar: {
-            el: ".swiper-scrollbar",
-            hide: true,
-          },
-          navigation: {
+      var swiper = new Swiper(".mySwiper1", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
-          mousewheel: true,
-          keyboard: true,
-        });
-      
-      </script>
+        pagination: {
+          el: ".swiper-pagination",
+          type: "progressbar",
+        },
+      });
+    </script>
+
 </body>
 </html>

@@ -1,66 +1,87 @@
 .container{width:100%;background-color: lemonchiffon; margin: auto;}
 
 /* header css */
-header{width: 80%; background-color: #fff;position: relative; left: 10%;}
-h1{width:300px; height: 60px; color:transparent;background:url(../images/logo.jpg); background-repeat: no-repeat; background-size: contain; position: relative; top: 30px;}
-.nav-container{display:block; border-radius: 20px;}
-.gnb{display: flex;justify-content: right; }
-.gnb>ul{display:flex; justify-content: right;}
-.search{color: transparent; background-image: url(../images/search.png);}
-.gnb1 li{margin: 5px;}
-.gnb1 span{width: 5px; height: 5px; padding: 1px 5px; background-color: red; color:#fff; border-radius: 50px; text-align: center;}
-.gnb2 li{font-weight : bold; font-size: 28px;position: relative;top:5px;}
-.gnb2 li>span{font-size: 20px;font-weight: 100; margin:0 10px;}
-
-.menu ul{display: flex; justify-content: right; }
-.menu li{margin:70px 0 20px 80px;font-size: 15px;font-weight: bold;}
+    header{width: 80%; background-color: #fff;position: relative; left: 10%;}
+    h1{width:300px; height: 60px; color:transparent;background:url(../images/logo.jpg); 
+      background-repeat:  no-repeat; background-size: contain; position: relative; top: 40px;}
+    
+    .nav-container{display:block; border-radius: 20px;}
+    .search{color: transparent; background-image: url(../images/search.png); background-position: 4px -4px;}
+    .gnb{display: flex;justify-content: right; }
+    .gnb>ul{display:flex; justify-content: right;}
+    .gnb1 li{margin: 5px; font-size: 12px;}
+    .gnb1 span{width: 5px; height: 5px; padding: 1px 5px; background-color: red; color:#fff; 
+      border-radius: 50px; text-align: center;}
+    .gnb2 li{font-weight : bold; font-size: 28px;position: relative;top:5px;}
+    .gnb2 li>span{font-size: 20px;font-weight: 100; margin:0 10px;}
+    
+    .menu{margin-top:70px; line-height: 50px;}
+    .menu ul{display: flex; justify-content: right; }
+    .menu li{font-size: 15px;font-weight: bold; letter-spacing: 0.5px;}
+    .menu li a{padding : 20px 35px 18px 35px;}
+    .menu li a:hover{background-color: rgba(0, 0, 0, 0.718); color: #fff;}
+    
+    
 
 /* section1 */
-.section1{width: 80%;position: relative; left: 10%;}
-/* swiper css */
-        html,
-        body {
-          position: relative;
-          height: 100%;
-        }
-  
-        body {
-          background: #eee;
-          font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-          font-size: 14px;
-          color: #000;
-          margin: 0;
-          padding: 0;
-        }
-  
-        .section1 .mySwiper1 .swiper {
-          width: 100%;
-          height: 100%;
-        }
-  
-        .section1 .mySwiper1 .swiper-slide {
-          text-align: center;
-          font-size: 18px;
-          background: #fff;
-  
-          /* Center slide text vertically */
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: -webkit-flex;
-          display: flex;
-          -webkit-box-pack: center;
-          -ms-flex-pack: center;
-          -webkit-justify-content: center;
-          justify-content: center;
-          -webkit-box-align: center;
-          -ms-flex-align: center;
-          -webkit-align-items: center;
-          align-items: center;
-        }
-  
-        .section1 .mySwiper1 .swiper-slide img {
-          display: block;
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-        }
+    .section1{width: 80%;position: relative; left: 10%;}
+
+/* Swiper css */
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .swiper {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .swiper-button-next:after, .swiper-button-prev:after{color: #fff;padding:30px;}
+
+      /* .swiper-pagination-progressbar .swiper-pagination-progressbar-fill
+      { background: var(--swiper-pagination-color,red);} */
+
+      :root {--swiper-theme-color: rgba(249, 33, 33, 0.96);}
