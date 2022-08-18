@@ -41,69 +41,68 @@
                     </ul>
                 </div>
             </div>
+            <div class="menu">
+              <ul>
+                  <ul class="mainMenu"><a href="#">All</a></ul>
+                  <ul class="mainMenu"><a href="#">Stationery & Plush</a>
+                    <li>
+                      <a href="#">인형</a>
+                    </li>
+                    <li>
+                      <a href="#">문구</a>
+                    </li>
+                  </ul>
+                  <ul class="mainMenu"><a href="#">Living</a>
+                    <li>
+                      <a href="#">패션</a>
+                    </li>
+                    <li>
+                      <a href="#">홈데코</a>
+                    </li>
+                    <li>
+                      <a href="#">패브릭</a>
+                    </li>
+                    <li>
+                      <a href="#">쿠션</a>
+                    </li>
+                    <li>
+                      <a href="#">캠핑</a>
+                    </li>
+                    <li>
+                      <a href="#">가전</a>
+                    </li>
+                  </ul>
+                  <ul class="mainMenu"><a href="#">Bath</a></ul>
+                  <ul class="mainMenu"><a href="#">Party & Play</a>
+                    <li>
+                      <a href="#">파티</a>
+                    </li>
+                    <li>
+                      <a href="#">게임</a>
+                    </li>
+                  </ul>
+                  <ul class="mainMenu"><a href="#">Beauty & Fitness</a></ul>
+                  <ul class="mainMenu"><a href="#">Food</a>
+                    <li>
+                      <a href="#">과자</a>
+                    </li>
+                    <li>
+                      <a href="#">차류</a>
+                    </li>
+                  </ul>
+                  <ul class="mainMenu"><a href="#">Daily Needs</a>
+                      <li>
+                        <a href="#">구강용품</a>
+                      </li>
+                      <li>
+                        <a href="#">생활용품</a>
+                      </li>
+                  </ul>
+              </ul>
+            </div>
         </header>
-        
+        <hr>
         <div class="section1">
-          <div class="menu">
-            <ul>
-                <ul class="mainMenu"><a href="#">All</a></ul>
-                <ul class="mainMenu"><a href="#">Stationery & Plush</a>
-                  <li>
-                    <a href="#">인형</a>
-                  </li>
-                  <li>
-                    <a href="#">문구</a>
-                  </li>
-                </ul>
-                <ul class="mainMenu"><a href="#">Living</a>
-                  <li>
-                    <a href="#">패션</a>
-                  </li>
-                  <li>
-                    <a href="#">홈데코</a>
-                  </li>
-                  <li>
-                    <a href="#">패브릭</a>
-                  </li>
-                  <li>
-                    <a href="#">쿠션</a>
-                  </li>
-                  <li>
-                    <a href="#">캠핑</a>
-                  </li>
-                  <li>
-                    <a href="#">가전</a>
-                  </li>
-                </ul>
-                <ul class="mainMenu"><a href="#">Bath</a></ul>
-                <ul class="mainMenu"><a href="#">Party & Play</a>
-                  <li>
-                    <a href="#">파티</a>
-                  </li>
-                  <li>
-                    <a href="#">게임</a>
-                  </li>
-                </ul>
-                <ul class="mainMenu"><a href="#">Beauty & Fitness</a></ul>
-                <ul class="mainMenu"><a href="#">Food</a>
-                  <li>
-                    <a href="#">과자</a>
-                  </li>
-                  <li>
-                    <a href="#">차류</a>
-                  </li>
-                </ul>
-                <ul class="mainMenu"><a href="#">Daily Needs</a>
-                    <li>
-                      <a href="#">구강용품</a>
-                    </li>
-                    <li>
-                      <a href="#">생활용품</a>
-                    </li>
-                </ul>
-            </ul>
-          </div>
-          <hr>
           <div class="swiper mySwiper1">
                 <div class="swiper-wrapper">
                   
@@ -132,11 +131,34 @@
                 <div class="swiper-pagination"></div>
           </div>
         </div>
+
+        <div class="section2">
+          <div class="seasonStory">
+            <h1>SEASON STORY</h1>
+            <a href="#"><img src="./images/seasonstory1.jpg" alt=""></a>
+            <a href="#"><img src="./images/seasonstory2.jpg" alt=""></a>
+          </div>
+          <div class="dailyButter">
+            <h1>DAILY BUTTER</h1>
+            <a href="#"><img src="./images/dailybutter01.jpg" alt=""></a>
+            <h2>
+              가격은 DOWN, 퀄리티는 UP! <br>
+              ONLY 데일리 마켓
+            </h2>
+          </div>
+        </div>
+        
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script>
       var swiper = new Swiper(".mySwiper1", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
         slidesPerView: 1,
         spaceBetween: 30,
         loop: true,
