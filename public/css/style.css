@@ -97,9 +97,22 @@
 .section2 h1{padding: 250px 0 90px 0; font-size:45px; text-align: center; 
           font-weight: bold; letter-spacing: 2px;}
 .seasonStory img{width:100%; display:block;}
+
 .dailyButter img{width:95%; border-top-left-radius: 350px; border-bottom-left-radius: 350px; margin-left: 5% ;}
-.dailyButter h2{width: 50%; background-image: url(../images/comma_bg.png); background-repeat: no-repeat;
+.butterProduct h2{width: 50%; background-image: url(../images/comma_bg.png); background-repeat: no-repeat;
               background-size: contain;  background-position-y: 30px;
               text-align: center;  margin-left: 25%; margin-top:120px; 
               font-size:30px; font-weight: bold; letter-spacing: 1px;}
 
+.productList{margin: 100px 0 20px 0; }
+.productList ul{width:100%;  display: flex; justify-content: center;}
+.productList ul span{display: block; width: 100%; 
+                white-space: nowrap; overflow:hidden;text-overflow: ellipsis;
+                text-align: center; margin-bottom: 15px; font-size: 15px;}
+.productList li{width: 25%; margin: 0; justify-content: center;}
+.itemsDetail{width: 100%; padding: 20px;}
+.productList li img{width: 100%; }
+.itemsDetail .price{color: #e9453e; font-size: 20px; font-weight: 600; }
+.itemsDetail .original-price{color:gray; font-size: 13px; text-decoration: line-through; margin: 0;}
+
+.productMore{display: flex; justify-content: center; margin: 30px;}
