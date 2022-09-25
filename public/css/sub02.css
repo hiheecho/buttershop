@@ -1,5 +1,19 @@
 @charset "utf-8";
 .container{width:100%; margin: auto;position: relative;background-color: #fff;}
+
+@keyframes blink-effect {
+  50% {
+    opacity: 0;
+  }
+}
+
+.nav-container .blink {
+  animation: blink-effect 1s step-end infinite;
+  background-color: yellow; color: #e73738;
+  border-radius: 10px; font-size: 11px; display: block; width: 85%; height: 15px; margin: auto;
+}
+.nav-container .click{ font-weight: 600;}  
+
 body {
     background: #fff;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -10,6 +24,7 @@ body {
   }
 
 /* header css */
+.header-container{width: 100%; border-bottom: 1px solid rgb(120, 120, 120);}
 header , .section1, footer{width: 80%; background-color: #fff;position: relative; margin: auto;}
 header{height: 220px;}
 header h1{width:300px; height: 60px; color:transparent; background:url(../images/logo.jpg); 

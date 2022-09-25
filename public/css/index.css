@@ -1,14 +1,31 @@
 @charset "utf-8";
 .container{width:100%; margin: auto;position: relative;background-color: #fff;}
 
+@keyframes blink-effect {
+  50% {
+    opacity: 0;
+  }
+}
+
+
+.nav-container .blink {
+  animation: blink-effect 1s step-end infinite;
+  background-color: yellow; color: #e73738;
+  border-radius: 10px; font-size: 11px; display: block; width: 85%; height: 15px; margin: auto;
+}
+.nav-container .click{ font-weight: 600;}  
+
+
 /* header css */
+    .header-container{width: 100%; border-bottom: 1px solid rgb(120, 120, 120);}
     header , .section1 , .section2, .section3, footer{width: 80%; background-color: #fff;position: relative; margin: auto;}
-    header{height: 220px;}
+    header{height: 235px;}
     header h1{width:300px; height: 60px; color:transparent; background:url(../images/logo.jpg); 
       background-repeat:  no-repeat; background-size: contain; position: relative; top: 40px;}
     
     .nav-container{display:block; border-radius: 20px;}
-    .search{color: transparent; background-image: url(../images/search.png); background-position: 4px -4px;}
+    .search{color: transparent; background-image: url(../images/search.png); background-position: 4px -4px; 
+            background-repeat: no-repeat;}
 
     .gnb{display: flex;justify-content: right; }
     .gnb>ul{display:flex; justify-content: right;}

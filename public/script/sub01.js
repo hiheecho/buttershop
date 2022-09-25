@@ -9,6 +9,8 @@ $('.tab-btns>li>a').on('click',function(event){
     $('.tab-content').eq(num).addClass('active')
 })
 
+$('.tab-btns>li:nth-child(1)>a').trigger('click');
+
 let gnbAlinks = document.querySelectorAll('.gnb2>ul>li>a');
     gnbAlinks.forEach((gnbAlink) => {
     gnbAlink.addEventListener('click', (event)=>{
