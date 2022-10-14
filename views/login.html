@@ -1,12 +1,186 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>로그인</h1>
-</body>
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Buttershop 로그인</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.png" />
+  </head>
+  <body>
+    <div class="header-container">
+      <header>
+          <a href="/">
+            <h1>logo</h1>
+          </a>
+          <nav class="nav-container">
+            <button class="menuBtn">menu</button>
+              <div class="gnb gnb1">
+                  <div class="search">
+                      <a href="#">search</a>
+                  </div>
+                  <ul class="loginControl">
+                      <li class="click" id="loginBtn"><a href="/login">로그인<span class="blink">Click!</span></a></li>
+                      <li id="loginRegister"><a href="#">회원가입</a></li>
+                      <li class=" click hide" id="logoutBtn"><a href="#">로그아웃<span class="blink">Click!</span></a></li>
+                      <li><a href="#">장바구니</a><span>0</span></li>
+                      <li><a href="#">마이페이지</a></li>
+                      <li class="click"><a href="/sub01">고객센터 <span class="blink">Click!</span></a></li>
+                      <li class="click"><a href="/sub02">이용안내 <span class="blink">Click!</span></a></li>
+                  </ul>
+              </div>
+              <div class="gnb gnb2">
+                  <ul>
+                      <li><a href="#">BEST</a><span>|</span></li>
+      
+                      <li><a href="#">REVIEW</a><span>|</span></li>
+      
+                      <li><a href="#">MAGAZINE</a><span>|</span></li>
+      
+                      <li><a href="#">SALE</a></li>
+                  </ul>
+              </div>
+          </nav>
+          
+          <nav class="menu">
+            <ul class="mainMenu">
+              <li><a href="#">All</a></li>
+              <li><a href="#">Stationery & Plush</a>
+                <ul class="subMenu">
+                  <li><a href="#">인형</a></li>
+                  <li><a href="#">문구</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Living</a>
+                <ul class="subMenu">
+                  <li><a href="#">패션</a></li>
+                  <li><a href="#">홈데코</a></li>
+                  <li><a href="#">패브릭</a></li>
+                  <li><a href="#">쿠션</a></li>
+                  <li><a href="#">캠핑</a></li>
+                  <li><a href="#">가전</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Bath</a></li>
+              <li><a href="#">Party & Play</a>
+                <ul class="subMenu">
+                  <li><a href="#">파티</a></li>
+                  <li><a href="#">게임</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Beauty & Fitness</a></li>
+              <li><a href="#">Food</a>
+                <ul class="subMenu">
+                  <li><a href="#">과자</a></li>
+                  <li><a href="#">차류</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Daily Needs</a>
+                <ul class="subMenu">
+                  <li><a href="#">구강용품</a></li>
+                  <li><a href="#">생활용품</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+      </header>
+    </div>
+    
+
+    <div class="login-container">
+      <form name="loginForm">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">회원 로그인</label>
+          <input type="text" class="form-control" id="id" placeholder="아이디" aria-describedby="emailHelp" name="id">
+          <input type="password" class="form-control" id="pw" placeholder="비밀번호" name="pw">
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">아이디 저장</label>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary" id="loginSubmit">로그인</button>
+      </form>        
+      <div class="sns-login">
+        <a href="https://nid.naver.com/nidlogin.login?mode=form&url=https%3A%2F%2Fwww.naver.com"><img src="/images/pc_naver.png" alt="네이버 아이디로 로그인"></a>
+        <a href="https://accounts.kakao.com/login?continue=https%3A%2F%2Fkauth.kakao.com%2Foauth%2Fauthorize%3Fproxy%3DeasyXDM_Kakao_xy0evwunnr_provider%26ka%3Dsdk%252F1.43.0%2520os%252Fjavascript%2520sdk_type%252Fjavascript%2520lang%252Fko-KR%2520device%252FMacIntel%2520origin%252Fhttps%25253A%25252F%25252Fwww.epis.or.kr%26origin%3Dhttps%253A%252F%252Fwww.epis.or.kr%26response_type%3Dcode%26redirect_uri%3Dkakaojs%26state%3D75s8lx6ji6ay9bhcor3d3d%26through_account%3Dtrue%26client_id%3D950f3ae1f2f550e5ba7ff7d9fffc7781&talk_login=hidden"><img src="/images/pc_kakao.png" alt="카카오 아이디로 로그인"></a>
+      </div>
+      <div class="btn-login">
+        <button type="submit" class="btn btn-sign">회원가입</button>
+        <button type="submit" class="btn btn-sign">아이디 찾기</button>
+        <button type="submit" class="btn btn-sign">비밀번호 찾기</button>
+      </div>
+    </div>
+
+
+    <footer class="footerInfo">
+      <p class="tel"><a  href="tel:1899-0811">1899-0811</a></p>
+      <ul class="hours">
+        <li>평일 10:00 - 16:00</li>
+        <li>점심 12:00 - 13:00</li>
+        <li>토/일/공휴일 휴무</li>
+      </ul>
+      <nav class="footerNav">
+        <ul>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Stockist</a>
+          </li>
+          <li>
+            <a href="#">Brand</a>
+          </li>
+          <li>
+            <a href="#">Magazine</a>
+          </li>
+          <li>
+            <a href="#">Notice</a>
+          </li>
+          <li>
+            <a href="#">Review</a>
+          </li>
+          <li>
+            <a href="#">Sale</a>
+          </li>
+          <li>
+            <a href="#">Q&A</a>
+          </li>
+        </ul>
+      </nav>
+      <p class="companyInfo">
+        상호명 : 주식회사 엠에이치앤코 | 대표 : 오상흔 | 서울특별시 구로구 경인로 662 (디큐브시티) 14층 엠에이치앤코 <br>
+        buttershop@mhnco.co.kr | 개인정보보호 책임자 이효영 <br>
+        통신판매업 신고번호 제 2017-서울구로-1368호 | 사업자등록번호 821-87-00617
+      </p>
+      <div class="footerNotice">
+        <a href="#" class="footerLogo"><img src="./images/footerlogo.png" alt="버터샵로고"></a>
+        <p class="notice">
+          고객님은 안전거래를 위해 결제 시 저희 사이트에서 가입한 구매안전 서비스를 이용하실 수 있습니다.
+        </p>
+        <nav class="serviceGuide">
+          <ul>
+            <li>
+              <a href="/sub02">이용안내</a>
+            </li>
+            <li>
+              <a href="#">이용약관</a>
+            </li>
+            <li>
+              <a href="#">개인정보처리방침</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+  
+    </footer>
+  </div>
+  <footer class="copyright">
+    <p>BUTTER. 2021 All copyright reserved.</p>
+  </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  </body>
+  <script src="/script/login.js"></script>
 </html>

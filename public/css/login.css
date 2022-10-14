@@ -7,6 +7,7 @@
   }
 }
 
+
 .nav-container .blink {
   animation: blink-effect 1s step-end infinite;
   background-color: yellow; color: #e73738;
@@ -22,10 +23,13 @@ body {
     margin: 0;
     padding: 0;
   }
+:root {--bs-link-hover-color: inherit;}
+
+body ul{padding-left: 0;}
 
 /* header css */
 .header-container{width: 100%; border-bottom: 1px solid rgb(120, 120, 120); }
-header, section,footer{width: 80%; background-color: #fff;position: relative; margin: auto;}
+header , footer{width: 80%; background-color: #fff;position: relative; margin: auto;}
 header{height: 235px;}
 header h1{width:300px; height: 60px; color:transparent; background:url(../images/logo.jpg); 
   background-repeat:  no-repeat; background-size: contain; position: relative; top: 40px;}
@@ -44,7 +48,7 @@ header h1{width:300px; height: 60px; color:transparent; background:url(../images
 .gnb2 li>span{font-size: 20px;font-weight: 100; margin:0 10px;}
 
 .menuBtn{display: none;}
-.menu{padding-top:50px; line-height: 50px; position:relative; z-index: 2; } 
+.menu{ line-height: 50px; position:relative; z-index: 2; } 
 .menu>.mainMenu{display: flex; justify-content: right; }
 .mainMenu{font-size: 90%;font-weight: bold; letter-spacing: 0.5px;}
 .mainMenu>li>a{padding : 20px 35px 18px 35px;}
@@ -55,20 +59,54 @@ header h1{width:300px; height: 60px; color:transparent; background:url(../images
 .subMenu li>a:hover{text-decoration: underline;}
 
 
-/* accordion css */
-    .accordion-container{ width: 100%;  
-        background-image: url(/images/underBg.png); background-repeat: no-repeat; background-position: right 0px top 110%; height: 650px; }
-    .accordion-box{width: 90%; margin: 30px auto 100px;}
-    .accordion-title.active,
-    .accordion-title:hover{ background-color: #e9453e; color: #fff; cursor: pointer; border: none; transition: 0.4s;}
-    .accordion-title{padding:10px 20px; font-size: 16px; border: 1px solid gray; border-radius: 20px; margin-bottom: 5px;}
-    .accordion-content.active{ display: block; border: 1px solid gray;}
-    .accordion-content { display:none; font-size: 14px; padding: 15px 20px; margin-bottom: 5px; border-radius: 20px; line-height: 25px;}
+/* login */
+.login-container{width:40%; margin:100px auto; border:1px solid gray;  height: 100%; border-radius: 20px;}
+.login-container form{width: 100%; display: flex;  padding: 20px 30px; justify-content: space-around;}
+.login-container .form-label{font-size: 20px; font-weight: 600; margin: 30px 0;}
+.form-control {width: 150%; font-size: 13px;}
+.form-check{margin-top: 35px; font-size: 12px; }
+input{margin-bottom: 15px; width: 30px;}
+.btn-primary {
+    font-weight: 600;
+    position: relative;
+    left: 15px; top: 90px;
+    height: 80px; width:160px;
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #e73738;
+    --bs-btn-border-color: #e73738;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #e73738;
+    --bs-btn-hover-border-color: transparent;
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #e73738;
+    --bs-btn-active-border-color: #e73738;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #e73738;
+    --bs-btn-disabled-border-color: #e73738;}
+
+    .form-check-input:checked {
+      background-color: #e73738;;
+      border-color: #e73738;;
+  }
+  .sns-login{ text-align: center; }
+  .sns-login img{margin-bottom: 30px;}
+  .btn-login{margin: auto;display: flex; justify-content: center; margin: 20px 0px 70px 0;}
+  .btn-login button{ left: 110px; top: 70px; 
+    height: 60px; width:160px;   
+    margin-right: 10px; 
+    --bs-btn-bg: #e73738; 
+    --bs-btn-color: #fff;
+    font-weight: 600;} 
+  .btn-login button:nth-last-of-type(1){margin-right: 0;}
+  
+  .btn:hover{--bs-btn-hover-color: #e73738; 
+    --bs-btn-hover-bg: rgb(255, 255, 170); 
     
-
-
+    }
 /* footer */
-footer{color: #e73738; margin-top: 100px;}
+footer{color: #e73738;}
 .footerInfo{margin-bottom: 30px;}
 .footerInfo>p, .hours, .footerNav, .serviceGuide { margin-bottom: 20px; font-size: 16px; position: relative;  }
 .footerInfo .tel{font-size: 45px; font-weight: 600;}
@@ -83,14 +121,19 @@ footer .hours{font-size: 18px;}
 
 /* 반응형CSS */
 @media screen and (max-width:1330px) {
-  header , .section1 , .section2, .section3, footer{width: 90%;}
+  header, footer{width: 90%;}
+  
   .mainMenu>li>a{padding : 18px 24px 18px 24px;}
   .subMenu{display: none;font-size: 11px; }
-  .subMenu li>a{ padding : 10px 10px 10px 25px ;  }
+  .subMenu li>a{ padding : 10px 10px 10px 25px ; }
+  .login-container{width: 50%;}
+  .form-control{width: 130%;}
+  .sns-login img{width:85%;}
+  .btn-login button{width: 30%;}
 }
 
 @media screen and (max-width:1000px) {
-  header ,footer{width: 90%;}
+  header ,footer{width: 95%;}
   header{height: 30%;}
   header h1{width:25%; margin: auto; margin-bottom: 40px;}
   
@@ -102,13 +145,23 @@ footer .hours{font-size: 18px;}
           background-size: cover; border-radius: 10px;}
   .menuBtn:hover{background-color:lightgray;}
   .footerInfo ul{display: block; line-height: 30px;}
+  .login-container{width: 70%;}
+  .form-control{width: 130%;}
+  .sns-login img{width:85%;}
+  .btn-login button{width: 30%;}
   
 }
 @media screen and (max-width:720px) {
-  header, .accordion-container, footer{width: 95%;}
+  header, footer{width: 98%;}
   .menuBtn{width: 40px; height: 40px; background-size:contain; margin:10px;}
   header h1{width:80%; text-align:center; margin-left: 23% ;}
   .gnb1,.companyInfo, .footerInfo, .serviceGuide{display: none;}
+  .login-container{width: 80%;}
+  .login-container form{padding: 20px 15px;}
+  .form-control{width: 115%;}
+  .btn-primary{width: 45%;}
+  .sns-login img{width:85%;}
+  .btn-login button{width: 30%;}
   
 }
 @media screen and (max-width:400px) {
@@ -116,4 +169,9 @@ footer .hours{font-size: 18px;}
   .menuBtn{width: 20px; height: 20px; background-size:contain; margin:10px;}
   header h1{width:50%; }
   .gnb1,.companyInfo,.footerInfo,.serviceGuide{display: none;}
+  .login-container{width: 90%;}
+  .form-control{width: 110%;}
+  .btn-primary{width: 40%;}
+  .sns-login img{width:85%;}
+  .btn-login button{width: 30%; font-size: 10px;}
 }
